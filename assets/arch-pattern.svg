@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <radialGradient id="fade" cx="50%" cy="100%" r="70%">
+      <stop offset="0%" stop-color="#c9a24a" stop-opacity="0.55"></stop>
+      <stop offset="50%" stop-color="#8a6f2a" stop-opacity="0.25"></stop>
+      <stop offset="100%" stop-color="#5a4818" stop-opacity="0"></stop>
+    </radialGradient>
+    <mask id="fadeMask">
+      <rect width="1600" height="1200" fill="url(#fade)"></rect>
+    </mask>
+  </defs>
+  <g mask="url(#fadeMask)" stroke="#c9a24a" stroke-width="0.8" fill="none" stroke-linecap="round">
+    
+    <g transform="translate(800,1200)">
+      
+      <path d="M -1100 0 A 1100 1100 0 0 1 1100 0"></path>
+      <path d="M -1000 0 A 1000 1000 0 0 1 1000 0"></path>
+      <path d="M -900 0 A 900 900 0 0 1 900 0"></path>
+      <path d="M -800 0 A 800 800 0 0 1 800 0"></path>
+      <path d="M -700 0 A 700 700 0 0 1 700 0"></path>
+      <path d="M -600 0 A 600 600 0 0 1 600 0"></path>
+      <path d="M -500 0 A 500 500 0 0 1 500 0"></path>
+      <path d="M -400 0 A 400 400 0 0 1 400 0"></path>
+      <path d="M -300 0 A 300 300 0 0 1 300 0"></path>
+      <path d="M -200 0 A 200 200 0 0 1 200 0"></path>
+      
+      <line x1="0" y1="0" x2="-1200" y2="0"></line>
+      <line x1="0" y1="0" x2="-1100" y2="-300"></line>
+      <line x1="0" y1="0" x2="-950" y2="-580"></line>
+      <line x1="0" y1="0" x2="-720" y2="-820"></line>
+      <line x1="0" y1="0" x2="-400" y2="-1000"></line>
+      <line x1="0" y1="0" x2="0" y2="-1200"></line>
+      <line x1="0" y1="0" x2="400" y2="-1000"></line>
+      <line x1="0" y1="0" x2="720" y2="-820"></line>
+      <line x1="0" y1="0" x2="950" y2="-580"></line>
+      <line x1="0" y1="0" x2="1100" y2="-300"></line>
+      <line x1="0" y1="0" x2="1200" y2="0"></line>
+    </g>
+  </g>
+</svg>

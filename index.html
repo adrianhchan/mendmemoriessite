@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mend Memories — Bring your memories back to life</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-2.css">
+  <link rel="stylesheet" href="styles-3.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-mark" href="#top">
+      <img class="nav-icon" src="assets/AppIcon.png" alt="">
+      MEND·MEMORIES
+    </a>
+    <div class="nav-links">
+      <a href="#how">How it works</a>
+      <a href="#actions">What it mends</a>
+      <a href="#gallery">Examples</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <a class="nav-cta" href="#download">
+      Download
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M5 12h14M13 6l6 6-6 6"/>
+      </svg>
+    </a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top" data-screen-label="01 Hero">
+  <div class="deco-bg"><div class="arch-pattern"></div></div>
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <div class="hero-eyebrow">
+        <span class="pill">iOS</span>
+        <span>Photo restoration · powered by frontier AI</span>
+      </div>
+
+      <img class="wordmark" src="assets/LogoWhite.svg" alt="Mend Memories"/>
+
+      <h1>Bring the moments you<br/>thought were lost <em>back to life.</em></h1>
+
+      <p class="lead">
+        Snap a photo of any faded, torn, water-damaged or black-and-white print.
+        Tap one button. Frontier-grade AI does the rest — no prompts, no jargon,
+        no tinkering required.
+      </p>
+
+      <div class="hero-ctas">
+        <a class="appstore" href="#download">
+          <svg class="apple" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 12.5c0-2.7 2.2-4 2.3-4-.7-1.7-2.6-2-3.3-2-1.4 0-2.7.8-3.4.8-.7 0-1.8-.8-3-.8-2.2 0-4.3 1.8-4.3 5.2 0 2.1.7 4.3 1.6 5.7.7 1 1.3 1.9 2.6 1.9 1.2 0 1.7-.8 3.1-.8s1.8.8 3 .8c1.3 0 2-1 2.7-2 .9-1.1 1.3-2.3 1.3-2.4-.1 0-2.6-1-2.6-3.4zM15 4.2c.7-.8 1.1-2 1-3.2-1 0-2.2.7-2.9 1.5-.6.7-1.1 1.9-1 3 1.1.1 2.2-.6 2.9-1.3z"/></svg>
+          <span class="label">
+            <span class="small">Download on the</span>
+            <span class="big">App Store</span>
+          </span>
+        </a>
+        <a class="ghost-btn" href="#how">
+          See how it works
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+
+      <div class="hero-meta">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg> 4.9 · App Store</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg> Your photos stay private</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Mends in about 20 seconds</span>
+      </div>
+    </div>
+
+    <div class="hero-device">
+      <div class="hero-photos">
+        <div class="stack s1"><img src="assets/photos/hero_stack_top.png" alt=""/></div>
+        <div class="stack s2"><img src="assets/photos/portrait_colorized.png" alt=""/></div>
+      </div>
+      <div class="iphone">
+        <div class="iphone-notch"></div>
+        <div class="iphone-screen">
+          <img src="assets/screens/04_AuthView_1_-_Apple_Only.png" alt="Mend Memories app — sign in screen"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ BEFORE / AFTER GALLERY ============ -->
+<section class="section gallery" id="gallery" data-screen-label="02 Examples">
+  <div class="deco-bg"></div>
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Before · After</div>
+      <h2 class="section-title">A century of damage, undone in seconds.</h2>
+      <p class="section-sub">
+        Real photos restored by Mend Memories. The reveal loops automatically — give it a moment.
+      </p>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="ba-card">
+        <div class="ba-stage">
+          <img class="before" src="assets/photos/on_desk_before_2.png" alt="Damaged photo on a desk, before restoration"/>
+          <img class="after"  src="assets/photos/on_desk_after_2.png"  alt="The same photo restored and colorized"/>
+          <div class="seam"></div>
+          <span class="ba-tag">Before</span>
+          <span class="ba-tag after-tag">After</span>
+        </div>
+        <div class="ba-caption">
+          <div class="action">Restore sepia · colorize</div>
+          <div class="title">Grandparents, 1962</div>
+        </div>
+      </div>
+
+      <div class="ba-card">
+        <div class="ba-stage">
+          <img class="before" src="assets/photos/on_desk_before_3.png" alt="Damaged photo on a desk, before restoration"/>
+          <img class="after"  src="assets/photos/on_desk_restored.png"  alt="The same photo, restored"/>
+          <div class="seam"></div>
+          <span class="ba-tag">Before</span>
+          <span class="ba-tag after-tag">After</span>
+        </div>
+        <div class="ba-caption">
+          <div class="action">Repair tears · restore</div>
+          <div class="title">Mom's portrait, 1984</div>
+        </div>
+      </div>
+
+      <div class="ba-card">
+        <div class="ba-stage">
+          <img class="before" src="assets/photos/on_desk_before.png" alt="Damaged photo on a desk, before restoration"/>
+          <img class="after"  src="assets/photos/on_desk_after.png"  alt="The same photo restored and colorized"/>
+          <div class="seam"></div>
+          <span class="ba-tag">Before</span>
+          <span class="ba-tag after-tag">After</span>
+        </div>
+        <div class="ba-caption">
+          <div class="action">Repair tears · colorize</div>
+          <div class="title">Found in the shoebox</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section how" id="how" data-screen-label="03 How it works">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">How it works</div>
+      <h2 class="section-title">Three taps. That's all.</h2>
+      <p class="section-sub">
+        Built for the family historian who has never typed a prompt in their life — and never has to.
+      </p>
+    </div>
+
+    <div class="how-grid">
+      <div class="how-step">
+        <div class="phone">
+          <div class="phone-screen">
+            <img src="assets/screens/08_OpenCamera.png" alt="Step 1 — Pick a photo"/>
+          </div>
+        </div>
+        <div>
+          <div class="stepnum">STEP ONE</div>
+          <h3>Pick a photo</h3>
+          <p>Take a quick snap with your camera, or pull a scan from your library. Anything from a faded Polaroid to a torn wedding portrait.</p>
+        </div>
+      </div>
+
+      <div class="how-step">
+        <div class="phone">
+          <div class="phone-screen">
+            <img src="assets/screens/11_ActionSelectionView_-_Pro.png" alt="Step 2 — Choose what to mend"/>
+          </div>
+        </div>
+        <div>
+          <div class="stepnum">STEP TWO</div>
+          <h3>Choose what to mend</h3>
+          <p>Ten one-tap restorations, written in plain English. Pick the one that matches what's wrong — no AI prompts, no settings.</p>
+        </div>
+      </div>
+
+      <div class="how-step">
+        <div class="phone">
+          <div class="phone-screen">
+            <img src="assets/screens/13_ResultView.png" alt="Step 3 — Save the memory"/>
+          </div>
+        </div>
+        <div>
+          <div class="stepnum">STEP THREE</div>
+          <h3>Save the memory</h3>
+          <p>A frontier image model does the heavy lifting. About 20 seconds later, save the restored photo, share it, or print it for the frame.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACTIONS GRID ============ -->
+<section class="section actions" id="actions" data-screen-label="04 What it mends">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Ten ways to mend</div>
+      <h2 class="section-title">One tap per problem.<br/>No prompts. No guesswork.</h2>
+      <p class="section-sub">
+        Mend Memories ships with the ten most common print-photo problems — pre-built, pre-tuned, ready to apply.
+      </p>
+    </div>
+
+    <div class="actions-grid">
+      <div class="action-card">
+        <div class="action-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </div>
+        <div class="num">01</div>
+        <div class="name">Fix over- and under-exposed areas</div>
+      </div>
+
+      <div class="action-card">
+        <div class="action-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 4h16v16H4z"/><path d="M4 14l4-4 4 4 4-4 4 4"/><circle cx="9" cy="9" r="1.5"/></svg>
+        </div>
+        <div class="num">02</div>
+        <div class="name">Restore sepia-toned photos</div>
+      </div>
+
+      <div class="action-card">
+        <div class="action-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="9"/><path d="M8 10c1 1 2 1 3 0M13 10c1 1 2 1 3 0M8 16c1.5-1.5 6.5-1.5 8 0"/></svg>
+        </div>
+        <div class="num">03</div>
+        <div class="name">Remove noise and grain</div>
+      </div>
+
+      <div class="action-card">
+        <div class="action-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 6l16 12M20 6L4 18M4 6h16v12H4z"/></svg>
+        </div>
+        <div class="num">04</div>
+        <div class="name">Fix folded or creased photos</div>
+      </div>
+
+      <div class="action-card">
+        <div class="action-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 21l4-4M3 21v-5h5M21 3l-4 4M21 3h-5v5M14 10l7-7M3 21l7-7"/></svg>
+        </div>
+        <div class="num">05</div>
+        <div class="name">Upscale low-resolution photos</div>
+      </div>
+
+      <div class="action-card">
+        <div class="action-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 3v18M3 12h18M5 5l14 14M19 5L5 19"/></svg>
+        </div>
+        <div class="num">06</div>
+        <div class="name">Restore faded colors</div>
+      </div>
+
+      <div class="action-card">
+        <div class="action-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 8c4 0 4 4 8 4s4-4 8-4M4 14c4 0 4 4 8 4s4-4 8-4"/></svg>
+        </div>
+        <div class="num">07</div>
+        <div class="name">Repair scratches and tears</div>
+      </div>
+
+      <div class="action-card">
+        <div class="action-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 12h6M15 12h6M12 3v6M12 15v6"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <div class="num">08</div>
+        <div class="name">Colorize a black-and-white photo</div>
+      </div>
+
+      <div class="action-card">
+        <div class="action-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 4h16M4 4v16M20 4v16M4 20h16M9 9h6v6H9z"/><path d="M4 4l5 5M20 20l-5-5"/></svg>
+        </div>
+        <div class="num">09</div>
+        <div class="name">Reconstruct missing parts</div>
+      </div>
+
+      <div class="action-card">
+        <div class="action-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 3c-4 5-6 8-6 11a6 6 0 0012 0c0-3-2-6-6-11z"/></svg>
+        </div>
+        <div class="num">10</div>
+        <div class="name">Remove water damage</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PITCH / PRIVACY ============ -->
+<section class="section pitch" data-screen-label="05 Why">
+  <div class="container">
+    <div class="pitch-grid">
+      <div class="pitch-photo">
+        <img src="assets/photos/why_mend.png" alt="A box of old family photos"/>
+        <div class="vignette"></div>
+      </div>
+      <div class="pitch-copy">
+        <div class="section-eyebrow" style="justify-content:flex-start">Why Mend Memories</div>
+        <h2>Built for the people who <em>haven't</em> spent a year learning to prompt.</h2>
+        <p>
+          Most AI tools ask you to know what "diffusion," "denoise," or
+          "img2img" mean. Mend Memories doesn't. The shoebox in the closet
+          deserves better.
+        </p>
+
+        <div class="pitch-points">
+          <div class="pitch-point">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="txt">
+              <strong>No prompts. Ever.</strong>
+              <span>Ten plain-English restorations, written by humans, refined for prints.</span>
+            </div>
+          </div>
+          <div class="pitch-point">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg></div>
+            <div class="txt">
+              <strong>Your photos stay yours.</strong>
+              <span>Sign in with Apple. End-to-end encrypted. Originals never leave your iCloud library.</span>
+            </div>
+          </div>
+          <div class="pitch-point">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+            <div class="txt">
+              <strong>About 20 seconds per photo.</strong>
+              <span>Powered by frontier image models — the same ones the pros pay for.</span>
+            </div>
+          </div>
+          <div class="pitch-point">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7l9 5 9-5M3 7v10l9 5 9-5V7M3 7l9-5 9 5"/></svg></div>
+            <div class="txt">
+              <strong>Print-ready output.</strong>
+              <span>Every mend comes out at high resolution — frame it, gift it, send it to print.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section testimonials" data-screen-label="06 Testimonials">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Stories</div>
+      <h2 class="section-title">Memories, mended.</h2>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>I have a box of my grandfather's photos from the war. I gave up on them ten years ago. In one afternoon I had every single one back.</p>
+        <div class="who">
+          <div class="avatar">M</div>
+          <div class="who-info">
+            <span class="name">Maria T.</span>
+            <span class="meta">Restored 47 photos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>My mother cried when I showed her her wedding photo in color. I'd never seen it that way. Honestly worth ten times the price.</p>
+        <div class="who">
+          <div class="avatar">D</div>
+          <div class="who-info">
+            <span class="name">David L.</span>
+            <span class="meta">Mother's Day, 2026</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>I'm 71 and I do not understand AI. I do, however, understand the camera button and the "Mend" button. That was enough.</p>
+        <div class="who">
+          <div class="avatar">J</div>
+          <div class="who-info">
+            <span class="name">Joan P.</span>
+            <span class="meta">First-time user</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="section pricing" id="pricing" data-screen-label="07 Pricing">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Pricing</div>
+      <h2 class="section-title">Three free mends.<br/>Then pick a pace.</h2>
+      <p class="section-sub">
+        Every plan unlocks all ten restorations. Pick the bundle that matches the size of the shoebox.
+      </p>
+    </div>
+
+    <div class="trial-banner">
+      <div class="trial-badge">FREE TRIAL</div>
+      <div class="trial-copy">
+        <strong>3 mends, on the house.</strong>
+        <span>Try Mend Memories before you pick a plan. No card, no countdown.</span>
+      </div>
+    </div>
+
+    <div class="tier-grid">
+      <div class="tier-card">
+        <div class="tier-head">
+          <h3>Starter</h3>
+          <p class="tier-tag">For the one photo that's been nagging you.</p>
+        </div>
+        <div class="tier-price">
+          <span class="currency">$</span>
+          <span class="amt">3.99</span>
+          <span class="per">/ month</span>
+        </div>
+        <div class="tier-gens">
+          <span class="big">12</span>
+          <span class="lbl">mends<br/>per month</span>
+        </div>
+        <ul class="tier-features">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>All ten restoration actions</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Full-resolution, print-ready output</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Top up anytime if you run out</li>
+        </ul>
+        <a class="tier-cta ghost" href="#download">Choose Starter</a>
+      </div>
+
+      <div class="tier-card featured">
+        <span class="tier-ribbon">Most popular</span>
+        <div class="tier-head">
+          <h3>Plus</h3>
+          <p class="tier-tag">For a steady afternoon at the kitchen table.</p>
+        </div>
+        <div class="tier-price">
+          <span class="currency">$</span>
+          <span class="amt">7.99</span>
+          <span class="per">/ month</span>
+        </div>
+        <div class="tier-gens">
+          <span class="big">30</span>
+          <span class="lbl">mends<br/>per month</span>
+        </div>
+        <ul class="tier-features">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Everything in Starter</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>2.5× the mends, ~12¢ each</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Priority restoration queue</li>
+        </ul>
+        <a class="tier-cta" href="#download">Choose Plus</a>
+      </div>
+
+      <div class="tier-card">
+        <div class="tier-head">
+          <h3>Pro</h3>
+          <p class="tier-tag">For the keeper of the whole family archive.</p>
+        </div>
+        <div class="tier-price">
+          <span class="currency">$</span>
+          <span class="amt">12.99</span>
+          <span class="per">/ month</span>
+        </div>
+        <div class="tier-gens">
+          <span class="big">60</span>
+          <span class="lbl">mends<br/>per month</span>
+        </div>
+        <ul class="tier-features">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Everything in Plus</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>5× the mends, the best per-photo rate</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Bulk import for whole albums</li>
+        </ul>
+        <a class="tier-cta ghost" href="#download">Choose Pro</a>
+      </div>
+    </div>
+
+    <div class="addons">
+      <div class="addon">
+        <div class="addon-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l2.39 4.84L20 8.65l-4 3.9.95 5.51L12 15.45l-4.95 2.6L8 12.55l-4-3.9 5.61-.81z"/></svg>
+        </div>
+        <div class="addon-body">
+          <div class="addon-row">
+            <h4>Annie's Studio</h4>
+            <span class="addon-price">$1.99 <em>one-time unlock</em></span>
+          </div>
+          <p>The slower, higher-fidelity restoration pass — named after Annie Leibovitz. Unlock it once, use it on any plan.</p>
+        </div>
+      </div>
+
+      <div class="addon">
+        <div class="addon-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/><circle cx="12" cy="12" r="9"/></svg>
+        </div>
+        <div class="addon-body">
+          <div class="addon-row">
+            <h4>Top-up mends</h4>
+            <span class="addon-price">From $1.99 <em>pay-as-you-go</em></span>
+          </div>
+          <p>Used up your monthly allowance? Buy a one-time pack — they stack on top of your plan and never expire.</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="pricing-foot">All plans renew monthly. Unused mends roll over for 30 days. Cancel anytime in Settings → Subscriptions.</p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq" data-screen-label="08 FAQ">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Common questions</div>
+      <h2 class="section-title">Yes, it really is that simple.</h2>
+    </div>
+
+    <div class="faq">
+      <details class="faq-item">
+        <summary>Do I need to know anything about AI? <span class="plus"></span></summary>
+        <div class="answer">Not a thing. There are no prompts, no sliders, no settings. You pick a photo, tap one of ten plainly-worded actions, and wait about twenty seconds. The AI lives in the background — you never have to talk to it.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What kinds of photos can it mend? <span class="plus"></span></summary>
+        <div class="answer">Printed photographs of any age — Polaroids, professional studio portraits, school photos, military ID photos, wedding albums, faded color prints from the 70s and 80s, sepia-toned tintypes, water-damaged photos, photos that have been folded or torn. If you can hold it, snap it, and we can probably mend it.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Will my photos be used to train AI? <span class="plus"></span></summary>
+        <div class="answer">No. Your photos are sent encrypted, restored, and returned. They are not retained, not shared, and not used for training — not by us, not by the model providers we use. Sign in with Apple keeps your identity to yourself.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What is Annie's Studio? <span class="plus"></span></summary>
+        <div class="answer">Annie's Studio is the Pro mode — a more careful, higher-fidelity restoration pass, named after Annie Leibovitz. It's slower and more expensive to run, so it's reserved for subscribers who want the very best result for a treasured photo.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Is it really iOS-only? <span class="plus"></span></summary>
+        <div class="answer">For now, yes. Mend Memories is built for the iPhone and the iPad. We are watching demand for an Android version — if you'd like one, let us know.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How big are the restored photos? <span class="plus"></span></summary>
+        <div class="answer">Restorations come back at the resolution they came in at, or upscaled if you chose that action. Either way, the output is print-ready — most users frame the result at 8×10 or larger without any quality loss.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What happens after the free trial? <span class="plus"></span></summary>
+        <div class="answer">Nothing surprising. On day 8, your subscription begins at the plan you chose. Apple sends you a reminder before that happens, and you can cancel any time from Settings → Subscriptions on your iPhone.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="section final-cta" id="download" data-screen-label="09 Download">
+  <div class="deco-bg"><div class="arch-pattern"></div></div>
+  <div class="container">
+    <img class="wordmark" src="assets/LogoWhite.svg" alt="Mend Memories"/>
+    <h2>Their faces are still in there.<br/>Go get them.</h2>
+    <p>Free for seven days. About twenty seconds per photo. The shoebox is waiting.</p>
+    <div class="hero-ctas" style="justify-content:center">
+      <a class="appstore" href="#">
+        <svg class="apple" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 12.5c0-2.7 2.2-4 2.3-4-.7-1.7-2.6-2-3.3-2-1.4 0-2.7.8-3.4.8-.7 0-1.8-.8-3-.8-2.2 0-4.3 1.8-4.3 5.2 0 2.1.7 4.3 1.6 5.7.7 1 1.3 1.9 2.6 1.9 1.2 0 1.7-.8 3.1-.8s1.8.8 3 .8c1.3 0 2-1 2.7-2 .9-1.1 1.3-2.3 1.3-2.4-.1 0-2.6-1-2.6-3.4zM15 4.2c.7-.8 1.1-2 1-3.2-1 0-2.2.7-2.9 1.5-.6.7-1.1 1.9-1 3 1.1.1 2.2-.6 2.9-1.3z"/></svg>
+        <span class="label">
+          <span class="small">Download on the</span>
+          <span class="big">App Store</span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="nav-mark" href="#top">
+          <img class="nav-icon" src="assets/AppIcon.png" alt="">
+          MEND·MEMORIES
+        </a>
+        <p>Photo restoration for people, not prompt engineers. Made with care for the keepers of the family album.</p>
+      </div>
+      <div class="footer-col">
+        <h4>App</h4>
+        <ul>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#actions">What it mends</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Subscription terms</a></li>
+          <li><a href="#">Data &amp; AI</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mend Memories. All rights reserved.</span>
+      <span class="made">Made with care · for the keepers of the album</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
