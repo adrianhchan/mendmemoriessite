@@ -1,0 +1,168 @@
+/* ====================================================================
+   RESPONSIVE LAYER — loaded last, overrides earlier breakpoints
+   Desktop (>1024) · Tablet (≤1024 / ≤900) · Mobile (≤640 / ≤460)
+   ==================================================================== */
+
+/* --- Mobile nav toggle (hidden on desktop) -------------------------- */
+.nav-toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 0;
+  border: 1px solid var(--card-border);
+  background: rgba(255, 245, 220, 0.04);
+  border-radius: 12px;
+  cursor: pointer;
+}
+.nav-toggle span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--cream);
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+.nav-links-cta { display: none; }
+
+/* ======================= TABLET ≤ 1024px ============================= */
+@media (max-width: 1024px) {
+  .container { padding: 0 28px; }
+  .section { padding: 96px 0; }
+  .section-head { margin-bottom: 56px; }
+  .nav-links { gap: 22px; }
+  /* keep hero from bleeding too far on tablet */
+  .hero-device { margin-right: -32px; margin-left: -24px; }
+}
+
+/* ================= NAV COLLAPSE ≤ 860px ============================== */
+@media (max-width: 860px) {
+  .nav-toggle { display: flex; }
+  .nav-cta { display: none; }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    padding: 8px 0 14px;
+    background: rgba(14, 10, 5, 0.97);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 24px 40px -20px rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s ease;
+  }
+  .nav-links a {
+    padding: 15px 28px;
+    font-size: 16px;
+    color: var(--cream);
+  }
+  .nav-links-cta {
+    display: block;
+    margin: 10px 24px 0;
+    padding: 13px 18px;
+    text-align: center;
+    background: var(--yellow);
+    color: #000;
+    font-weight: 600;
+    border-radius: 999px;
+  }
+  .nav-open .nav-links {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+  .nav-open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-open .nav-toggle span:nth-child(2) { opacity: 0; }
+  .nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+}
+
+/* ======================= ≤ 900px (stacks) =========================== */
+@media (max-width: 900px) {
+  .hero { padding: 56px 0 72px; }
+  .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+  .hero h1 br { display: none; }
+  .hero p.lead { margin-bottom: 32px; }
+  .hero-device {
+    margin: 0 auto;
+    width: min(100%, 460px);
+    max-width: 460px;
+  }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+}
+
+/* ======================= MOBILE ≤ 640px ============================= */
+@media (max-width: 640px) {
+  .container { padding: 0 18px; }
+  .nav-inner { padding: 14px 18px; }
+
+  .section { padding: 60px 0; }
+  .section-head { margin-bottom: 36px; }
+  .section-title { font-size: clamp(28px, 8vw, 40px); }
+  .section-eyebrow::before,
+  .section-eyebrow::after { width: 20px; }
+  .section-sub { font-size: 15px; }
+
+  /* hero */
+  .hero-ctas { width: 100%; gap: 12px; }
+  .hero-ctas .appstore,
+  .hero-ctas .ghost-btn {
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+
+  /* before/after */
+  .gallery-grid { grid-template-columns: 1fr; gap: 18px; }
+  .ba-card { padding: 14px; }
+
+  /* how it works */
+  .how-grid { gap: 40px; }
+
+  /* actions */
+  .act-label { flex-wrap: wrap; gap: 8px; }
+
+  /* pricing */
+  .tier-grid { gap: 28px; }
+  .tier-card.featured { transform: none; }
+  .tier-card.featured:hover { transform: translateY(-2px); }
+  .addons { margin-top: 36px; }
+
+  /* testimonials */
+  .testimonial p { font-size: 18px; }
+
+  /* footer */
+  .footer-inner { grid-template-columns: 1fr 1fr; gap: 32px 24px; }
+
+  /* final CTA */
+  .final-cta { padding: 84px 0; }
+  .final-cta .wordmark { width: 72vw; }
+  .final-cta h2 { font-size: clamp(30px, 7.5vw, 42px); }
+}
+
+/* ======================= SMALL ≤ 460px ============================= */
+@media (max-width: 460px) {
+  .nav-mark { font-size: 13px; letter-spacing: 0.16em; gap: 8px; }
+  .nav-icon { width: 26px; height: 26px; }
+
+  .section { padding: 52px 0; }
+  .section-title { font-size: clamp(26px, 9vw, 34px); }
+
+  .footer-inner { grid-template-columns: 1fr; gap: 28px; }
+  .footer-bottom { gap: 10px; }
+
+  /* pricing numbers stay legible */
+  .tier-price .amt { font-size: 48px; }
+  .trial-banner { padding: 16px 18px; }
+
+  /* actions: keep thumb but tighter */
+  .act-row { gap: 14px; }
+  .act-text h3 { font-size: 16px; }
+}
