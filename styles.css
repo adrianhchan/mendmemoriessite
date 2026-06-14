@@ -148,14 +148,23 @@ section { position: relative; }
   padding: 80px 0 120px;
   position: relative;
   overflow: hidden;
+  min-height: 90svh;
+  display: flex;
+  align-items: center;
 }
 .hero-inner {
+  width: 100%;
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 35vw 1fr;
   gap: 48px;
   align-items: center;
   position: relative;
   z-index: 2;
+}
+.hero-copy {
+  position: relative;
+  z-index: 3;          /* sit above the phones image where they overlap */
+  padding-left: clamp(8px, 3.5vw, 56px);
 }
 .hero-eyebrow {
   display: inline-flex; align-items: center; gap: 10px;
@@ -194,7 +203,7 @@ section { position: relative; }
 .hero p.lead {
   font-size: 18px;
   color: var(--cream-dim);
-  max-width: 520px;
+  max-width: 640px;
   margin: 0 0 40px;
   text-wrap: pretty;
 }
@@ -241,15 +250,21 @@ section { position: relative; }
 
 /* hero device */
 .hero-device {
-  position: relative;
-  justify-self: end;
-  margin-right: -80px;
-  margin-left: -40px;
-  width: clamp(420px, 58vw, 860px);
+  position: absolute;
+  top: 50%;
+  right: clamp(20px, 4vw, 96px);
+  transform: translateY(-50%);
+  z-index: 1;                 /* behind hero copy (z-index 3) so text sits on top */
+  display: flex;
+  justify-content: flex-end;
+  pointer-events: none;
 }
 .hero-phones-img {
-  width: 100%;
-  height: auto;
+  height: 72svh;        /* ≈ 80% of the 90svh hero */
+  max-height: 820px;
+  width: auto;          /* width follows height → aspect ratio preserved */
+  max-width: none;      /* override global img max-width:100% that was squishing it */
+  flex: 0 0 auto;       /* don't let the grid track squeeze the width */
   display: block;
   mix-blend-mode: multiply;
 }

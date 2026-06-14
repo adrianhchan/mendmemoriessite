@@ -482,6 +482,39 @@
   line-height: 1.5;
   text-wrap: pretty;
 }
+.topup-packs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 16px;
+}
+.pack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 12px 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255,245,220,0.03);
+}
+.pack-mends {
+  font-family: "Poiret One", serif;
+  font-size: 26px;
+  line-height: 1;
+  color: var(--cream);
+}
+.pack-lbl {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.pack-price {
+  margin-top: 4px;
+  font-size: 14px;
+  color: var(--yellow);
+}
 
 .pricing-foot {
   text-align: center;
@@ -588,7 +621,7 @@
 }
 .footer-inner {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
   gap: 40px;
   margin-bottom: 40px;
 }

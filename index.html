@@ -17,9 +17,8 @@
 <!-- ============ NAV ============ -->
 <nav class="nav" id="nav">
   <div class="nav-inner">
-    <a class="nav-mark" href="#top">
-      <img class="nav-icon" src="assets/AppIcon.png" alt="">
-      MEND·MEMORIES
+    <a class="nav-mark" href="#top" aria-label="Mend Memories home">
+      <img class="nav-icon" src="assets/AppIcon.png" alt="Mend Memories">
     </a>
     <div class="nav-links" id="navLinks">
       <a href="#how">How it works</a>
@@ -90,9 +89,10 @@
 
     </div>
 
-    <div class="hero-device">
-      <img class="hero-phones-img" src="assets/photos/hero_phones.png" alt="Mend Memories app on iPhone"/>
-    </div>
+  </div>
+
+  <div class="hero-device">
+    <img class="hero-phones-img" src="assets/photos/hero_phones.png" alt="Mend Memories app on iPhone"/>
   </div>
 </header>
 
@@ -113,6 +113,7 @@
         <div class="ba-stage">
           <img class="before" src="assets/photos/on_desk_before_2.png" alt="Damaged photo on a desk, before restoration"/>
           <img class="after"  src="assets/photos/on_desk_after_2.png"  alt="The same photo restored and colorized"/>
+          <button class="ba-toggle" type="button" aria-pressed="false"><span class="ba-toggle-label">See after</span></button>
         </div>
         <div class="ba-caption">
           <div class="action">Restore sepia · colorize</div>
@@ -124,6 +125,7 @@
         <div class="ba-stage">
           <img class="before" src="assets/photos/on_desk_before_3.png" alt="Damaged photo on a desk, before restoration"/>
           <img class="after"  src="assets/photos/on_desk_restored.png"  alt="The same photo, restored"/>
+          <button class="ba-toggle" type="button" aria-pressed="false"><span class="ba-toggle-label">See after</span></button>
         </div>
         <div class="ba-caption">
           <div class="action">Repair tears · restore</div>
@@ -135,6 +137,7 @@
         <div class="ba-stage">
           <img class="before" src="assets/photos/on_desk_before.png" alt="Damaged photo on a desk, before restoration"/>
           <img class="after"  src="assets/photos/on_desk_after.png"  alt="The same photo restored and colorized"/>
+          <button class="ba-toggle" type="button" aria-pressed="false"><span class="ba-toggle-label">See after</span></button>
         </div>
         <div class="ba-caption">
           <div class="action">Repair tears · colorize</div>
@@ -192,7 +195,7 @@
         <div>
           <div class="stepnum">STEP THREE</div>
           <h3>Save the memory</h3>
-          <p>A frontier image model does the heavy lifting. About 20 seconds later, save the restored photo, share it, or print it for the frame.</p>
+          <p>A frontier image model does the heavy lifting. Thirty seconds to a minute later, save the restored photo, share it, or print it for the frame.</p>
         </div>
       </div>
     </div>
@@ -301,13 +304,13 @@
             <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg></div>
             <div class="txt">
               <strong>Your photos stay yours.</strong>
-              <span>Sign in with Apple. End-to-end encrypted. Originals never leave your iCloud library.</span>
+              <span>Sign in with Apple keeps your identity private — no name, no email, no account to manage.</span>
             </div>
           </div>
           <div class="pitch-point">
             <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
             <div class="txt">
-              <strong>About 20 seconds per photo.</strong>
+              <strong>About 30 seconds to a minute per photo.</strong>
               <span>Powered by frontier image models — the same ones the pros pay for.</span>
             </div>
           </div>
@@ -379,7 +382,7 @@
       <div class="section-eyebrow">Pricing</div>
       <h2 class="section-title">Three free mends.<br/>Then pick a pace.</h2>
       <p class="section-sub">
-        Every plan unlocks all ten restorations. Pick the bundle that matches the size of the shoebox.
+        Every plan includes all seven restoration actions. Pick the bundle that matches the size of the shoebox.
       </p>
     </div>
 
@@ -387,7 +390,7 @@
       <div class="trial-badge">FREE TRIAL</div>
       <div class="trial-copy">
         <strong>3 mends, on the house.</strong>
-        <span>Try Mend Memories before you pick a plan. No card, no countdown.</span>
+        <span>Try Mend Memories first — once your three free mends are used, you decide whether to subscribe. No card, no countdown.</span>
       </div>
     </div>
 
@@ -399,7 +402,7 @@
         </div>
         <div class="tier-price">
           <span class="currency">$</span>
-          <span class="amt">3.99</span>
+          <span class="amt">2.99</span>
           <span class="per">/ month</span>
         </div>
         <div class="tier-gens">
@@ -407,11 +410,10 @@
           <span class="lbl">mends<br/>per month</span>
         </div>
         <ul class="tier-features">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>All ten restoration actions</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Full-resolution, print-ready output</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Top up anytime if you run out</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>All 7 restoration actions</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Sharp 2K, print-ready output</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>About 25¢ per mend</li>
         </ul>
-        <a class="tier-cta ghost" href="#download">Choose Starter</a>
       </div>
 
       <div class="tier-card featured">
@@ -422,7 +424,7 @@
         </div>
         <div class="tier-price">
           <span class="currency">$</span>
-          <span class="amt">7.99</span>
+          <span class="amt">5.99</span>
           <span class="per">/ month</span>
         </div>
         <div class="tier-gens">
@@ -431,10 +433,9 @@
         </div>
         <ul class="tier-features">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Everything in Starter</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>2.5× the mends, ~12¢ each</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Priority restoration queue</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>About 20¢ per mend</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Best value for regular restoring</li>
         </ul>
-        <a class="tier-cta" href="#download">Choose Plus</a>
       </div>
 
       <div class="tier-card">
@@ -444,7 +445,7 @@
         </div>
         <div class="tier-price">
           <span class="currency">$</span>
-          <span class="amt">12.99</span>
+          <span class="amt">9.99</span>
           <span class="per">/ month</span>
         </div>
         <div class="tier-gens">
@@ -453,10 +454,9 @@
         </div>
         <ul class="tier-features">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Everything in Plus</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>5× the mends, the best per-photo rate</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Bulk import for whole albums</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>About 17¢ per mend</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Our lowest price per photo</li>
         </ul>
-        <a class="tier-cta ghost" href="#download">Choose Pro</a>
       </div>
     </div>
 
@@ -481,14 +481,31 @@
         <div class="addon-body">
           <div class="addon-row">
             <h4>Top-up mends</h4>
-            <span class="addon-price">From $1.99 <em>pay-as-you-go</em></span>
+            <span class="addon-price">From $1.99 <em>one-time</em></span>
           </div>
-          <p>Used up your monthly allowance? Buy a one-time pack — they stack on top of your plan and never expire.</p>
+          <p>Run out before your next renewal? Buy a one-time pack. Your monthly mends are always spent first, and top-ups last a year from the day you buy them.</p>
+          <div class="topup-packs">
+            <div class="pack">
+              <span class="pack-mends">8</span>
+              <span class="pack-lbl">mends</span>
+              <span class="pack-price">$1.99</span>
+            </div>
+            <div class="pack">
+              <span class="pack-mends">20</span>
+              <span class="pack-lbl">mends</span>
+              <span class="pack-price">$4.99</span>
+            </div>
+            <div class="pack">
+              <span class="pack-mends">50</span>
+              <span class="pack-lbl">mends</span>
+              <span class="pack-price">$9.99</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <p class="pricing-foot">All plans renew monthly. Unused mends roll over for 30 days. Cancel anytime in Settings → Subscriptions.</p>
+    <p class="pricing-foot">All plans renew monthly. Unused monthly mends don't roll over — they reset on each renewal. Top-up mends are spent only after your monthly mends and expire one year after purchase. Cancel anytime in Settings → Subscriptions.</p>
   </div>
 </section>
 
@@ -503,15 +520,15 @@
     <div class="faq">
       <details class="faq-item">
         <summary>Do I need to know anything about AI? <span class="plus"></span></summary>
-        <div class="answer">Not a thing. There are no prompts, no sliders, no settings. You pick a photo, tap one of ten plainly-worded actions, and wait about twenty seconds. The AI lives in the background — you never have to talk to it.</div>
+        <div class="answer">Not a thing. There are no prompts, no sliders, no settings. You pick a photo, tap one of ten plainly-worded actions, and wait about thirty seconds to a minute. The AI lives in the background — you never have to talk to it.</div>
       </details>
       <details class="faq-item">
         <summary>What kinds of photos can it mend? <span class="plus"></span></summary>
         <div class="answer">Printed photographs of any age — Polaroids, professional studio portraits, school photos, military ID photos, wedding albums, faded color prints from the 70s and 80s, sepia-toned tintypes, water-damaged photos, photos that have been folded or torn. If you can hold it, snap it, and we can probably mend it.</div>
       </details>
       <details class="faq-item">
-        <summary>Will my photos be used to train AI? <span class="plus"></span></summary>
-        <div class="answer">No. Your photos are sent encrypted, restored, and returned. They are not retained, not shared, and not used for training — not by us, not by the model providers we use. Sign in with Apple keeps your identity to yourself.</div>
+        <summary>What happens to my photos? <span class="plus"></span></summary>
+        <div class="answer">When you mend a photo, it's sent to the frontier image model that performs the restoration and the finished result comes back to you. Sign in with Apple means we never ask for your name or email — there's no account to manage.</div>
       </details>
       <details class="faq-item">
         <summary>What are the Pro actions? <span class="plus"></span></summary>
@@ -523,11 +540,11 @@
       </details>
       <details class="faq-item">
         <summary>How big are the restored photos? <span class="plus"></span></summary>
-        <div class="answer">Restorations come back at the resolution they came in at, or upscaled if you chose that action. Either way, the output is print-ready — most users frame the result at 8×10 or larger without any quality loss.</div>
+        <div class="answer">Every restoration comes back at 2K resolution — print-ready. Most users frame the result at 8×10 or larger without any quality loss.</div>
       </details>
       <details class="faq-item">
         <summary>What happens after the free trial? <span class="plus"></span></summary>
-        <div class="answer">Nothing surprising. On day 8, your subscription begins at the plan you chose. Apple sends you a reminder before that happens, and you can cancel any time from Settings → Subscriptions on your iPhone.</div>
+        <div class="answer">The free trial isn't a clock — it's 3 free mends. Once you've used them, you decide whether to subscribe. Nothing is charged unless you pick a plan, and you can cancel any time from Settings → Subscriptions on your iPhone.</div>
       </details>
     </div>
   </div>
@@ -539,7 +556,7 @@
   <div class="container">
     <img class="wordmark" src="assets/LogoWhite.svg" alt="Mend Memories"/>
     <h2>Their faces are still in there.<br/>Go get them.</h2>
-    <p>Free for seven days. About twenty seconds per photo. The shoebox is waiting.</p>
+    <p>Three free mends to start. About 30 seconds to a minute per photo. The shoebox is waiting.</p>
     <div class="hero-ctas" style="justify-content:center">
       <a class="appstore" href="#">
         <svg class="apple" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 12.5c0-2.7 2.2-4 2.3-4-.7-1.7-2.6-2-3.3-2-1.4 0-2.7.8-3.4.8-.7 0-1.8-.8-3-.8-2.2 0-4.3 1.8-4.3 5.2 0 2.1.7 4.3 1.6 5.7.7 1 1.3 1.9 2.6 1.9 1.2 0 1.7-.8 3.1-.8s1.8.8 3 .8c1.3 0 2-1 2.7-2 .9-1.1 1.3-2.3 1.3-2.4-.1 0-2.6-1-2.6-3.4zM15 4.2c.7-.8 1.1-2 1-3.2-1 0-2.2.7-2.9 1.5-.6.7-1.1 1.9-1 3 1.1.1 2.2-.6 2.9-1.3z"/></svg>
@@ -557,9 +574,8 @@
   <div class="container">
     <div class="footer-inner">
       <div class="footer-brand">
-        <a class="nav-mark" href="#top">
-          <img class="nav-icon" src="assets/AppIcon.png" alt="">
-          MEND·MEMORIES
+        <a class="nav-mark" href="#top" aria-label="Mend Memories home">
+          <img class="nav-icon" src="assets/AppIcon.png" alt="Mend Memories">
         </a>
         <p>Photo restoration for people, not prompt engineers. Made with care for the keepers of the family album.</p>
       </div>
@@ -573,30 +589,33 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Press</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Status</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
         <h4>Legal</h4>
         <ul>
           <li><a href="#">Privacy</a></li>
           <li><a href="#">Terms</a></li>
-          <li><a href="#">Subscription terms</a></li>
-          <li><a href="#">Data &amp; AI</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Mend Memories. All rights reserved.</span>
+      <span>© 2026 2021076 Ontario Corporation. All rights reserved.</span>
       <span class="made">Made with care · for the keepers of the album</span>
     </div>
   </div>
 </footer>
+
+<script>
+  // Before/After: tap-to-reveal for touch devices (no hover)
+  document.querySelectorAll('.ba-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var stage = btn.closest('.ba-stage');
+      if (!stage) return;
+      var revealed = stage.classList.toggle('revealed');
+      btn.setAttribute('aria-pressed', revealed ? 'true' : 'false');
+      var label = btn.querySelector('.ba-toggle-label');
+      if (label) label.textContent = revealed ? 'See before' : 'See after';
+    });
+  });
+</script>
 
 </body>
 </html>

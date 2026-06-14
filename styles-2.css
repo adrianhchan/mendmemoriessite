@@ -102,6 +102,46 @@
   .ba-stage:hover .after { transform: none; }
 }
 
+/* Tap-to-reveal (mobile, where there is no hover) */
+.ba-toggle {
+  position: absolute;
+  bottom: 14px; left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  display: none;                 /* shown only on touch / small screens */
+  align-items: center;
+  gap: 8px;
+  background: rgba(14,10,5,0.72);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--gold-soft, rgba(244,196,48,0.35));
+  color: var(--cream);
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 9px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.ba-toggle::before {
+  content: "";
+  width: 7px; height: 7px;
+  border-radius: 999px;
+  background: var(--gold, #f4c430);
+  transition: background 0.3s ease;
+}
+.ba-stage.revealed .after { opacity: 1; }
+.ba-stage.revealed .before,
+.ba-stage.revealed .after {
+  transform: scale(1.08) translate(-1.4%, -2%);
+}
+.ba-stage.revealed .ba-toggle::before { background: var(--cream); }
+
+@media (hover: none), (max-width: 640px) {
+  .ba-toggle { display: inline-flex; }
+}
+
 .ba-tag {
   position: absolute;
   top: 14px; left: 14px;
