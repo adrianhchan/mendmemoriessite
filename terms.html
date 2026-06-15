@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Use — Mend Memories</title>
+<meta name="description" content="The terms for using Mend Memories: subscriptions, purchases, acceptable use, and your rights.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<!-- Point these at wherever your stylesheets actually live (same files you sent), loaded in this order. -->
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles-2.css">
+<link rel="stylesheet" href="styles-3.css">
+<link rel="stylesheet" href="styles-responsive.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="nav-mark" href="#top" aria-label="Mend Memories home">
+      <img class="nav-icon" src="assets/AppIcon.png" alt="Mend Memories">
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#how">How it works</a>
+      <a href="#actions">What it restores</a>
+      <a href="#gallery">Examples</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-links-cta" href="#download">Download</a>
+    </div>
+    <a class="nav-cta" href="#download">
+      Download
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M5 12h14M13 6l6 6-6 6"/>
+      </svg>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<script>
+  (function () {
+    var nav = document.getElementById('nav');
+    var toggle = document.getElementById('navToggle');
+    var links = document.getElementById('navLinks');
+    if (!nav || !toggle || !links) return;
+    function setOpen(open) {
+      nav.classList.toggle('nav-open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    }
+    toggle.addEventListener('click', function () {
+      setOpen(!nav.classList.contains('nav-open'));
+    });
+    links.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') setOpen(false);
+    });
+  })();
+</script>
+
+<section class="section">
+  <div class="container">
+
+    <div class="section-head">
+      <div class="section-eyebrow">Terms</div>
+      <h1 class="section-title">Terms of Use</h1>
+      <p class="section-sub">The agreement between you and Mend Memories. We've kept it as plain as we can — using the app means you accept it.</p>
+    </div>
+
+    <div class="faq">
+
+      <p class="mono">Last updated June 14, 2026</p>
+
+      <p>This Terms of Use agreement ("Terms") is a contract between you and <strong>2021076 Ontario Corporation</strong> ("Mend Memories," "we," "us," or "our"), governing your use of the Mend Memories app for iPhone and iPad and the website at mendmemories.com (together, the "Service"). If you don't agree to these Terms, please don't use the Service.</p>
+
+      <h2 class="deco">Who can use Mend Memories</h2>
+      <p>You must be at least 13 years old to use the Service, and old enough to form a binding contract where you live. If you're a minor in your jurisdiction, you may use the Service only with the involvement of a parent or guardian who agrees to these Terms. You're responsible for everything that happens under your account.</p>
+
+      <h2 class="deco">What the Service does</h2>
+      <p>Mend Memories lets you restore photographs using AI image models. You choose a photo and tap a plainly-worded action — such as Modernize, Colorize, Repair, Remove Flash Glare, Fix Exposure, Heavy Damage Repair, and the premium Pro actions (Studio, Headshot, and Golden Hour) — and the app returns a restored image. Restorations are performed off-device by our AI image-processing provider, fal.ai, as described in our <strong><a href="/privacy.html">Privacy Policy</a></strong>.</p>
+      <p>Results are produced by AI and will vary. Restoration involves reconstruction, so an output may differ from the original in detail. We don't guarantee that any particular result will meet your expectations or be suitable for a specific purpose.</p>
+
+      <h2 class="deco">Your account</h2>
+      <p>Accounts are created with Sign in with Apple. Keep your Apple ID secure; you're responsible for activity under your account. You can delete your account any time from Settings &rarr; Delete Account in the app.</p>
+
+      <h2 class="deco">Free trial, subscriptions, and purchases</h2>
+      <p>All purchases are made through Apple's in-app purchase system and are charged to your Apple ID. Apple processes payments; we don't receive your payment details.</p>
+
+      <h3 class="deco">Free trial</h3>
+      <p>New users receive <strong>3 free mends</strong>. This is a fixed number of restorations, not a timed trial. Once they're used, you can choose whether to subscribe. Nothing is charged unless you choose a plan or make a purchase.</p>
+
+      <h3 class="deco">Auto-renewing subscriptions</h3>
+      <p>We offer the following monthly auto-renewing subscriptions:</p>
+      <ul>
+        <li><strong>Starter</strong> — $2.99/month, 12 mends per month.</li>
+        <li><strong>Plus</strong> — $5.99/month, 30 mends per month.</li>
+        <li><strong>Pro</strong> — $9.99/month, 60 mends per month.</li>
+      </ul>
+
+      <div class="trial-banner">
+        <span class="trial-badge">AUTO-RENEW</span>
+        <div class="trial-copy">
+          <strong>How billing works</strong>
+          <span>Payment is charged to your Apple ID at confirmation of purchase. Subscriptions automatically renew at the same price each month unless you turn off auto-renew at least 24 hours before the end of the current period; your Apple ID is charged for renewal within 24 hours before the period ends. Manage or cancel any time in Settings &rarr; [your name] &rarr; Subscriptions on your device. Unused monthly mends do not roll over — they reset at each renewal.</span>
+        </div>
+      </div>
+
+      <h3 class="deco">One-time purchases</h3>
+      <ul>
+        <li><strong>Pro actions unlock</strong> — a one-time purchase of $1.99 that unlocks the Studio, Headshot, and Golden Hour actions permanently, on any plan.</li>
+        <li><strong>Top-up packs</strong> — one-time purchases of additional mends (8 for $1.99, 20 for $4.99, 50 for $9.99). Top-up mends are spent only after your monthly mends are used, and expire one year after the date of purchase.</li>
+      </ul>
+
+      <h3 class="deco">Restoring purchases</h3>
+      <p>If you reinstall the app or use a new device, you can restore your previous purchases with the Restore Purchases option in the app's settings.</p>
+
+      <h3 class="deco">Refunds and cancellation</h3>
+      <p>Because purchases are made through Apple, refunds are handled by Apple in accordance with the <strong><a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank" rel="noopener">Apple Media Services Terms</a></strong> and applicable consumer-protection law. To request a refund, use Apple's <strong><a href="https://reportaproblem.apple.com/" target="_blank" rel="noopener">Report a Problem</a></strong> page. Cancelling a subscription stops future renewals; it doesn't retroactively refund the current period. Nothing in these Terms limits any non-waivable refund or cancellation rights you have under the law where you live.</p>
+
+      <h2 class="deco">Acceptable use</h2>
+      <p>You agree to use Mend Memories only for lawful purposes, and only with photos you own or have the right to use. You will not submit or use the Service to create:</p>
+      <ul>
+        <li>content that infringes anyone's intellectual property, privacy, or publicity rights;</li>
+        <li>images of other people used without a right or consent that the law requires;</li>
+        <li>any sexual content involving minors, or any unlawful, abusive, harassing, deceptive, or harmful content;</li>
+        <li>content intended to impersonate someone or to mislead.</li>
+      </ul>
+      <p>Our AI provider applies automated content review, and we may decline to process, or may restrict access to, content that violates these Terms or that we reasonably believe is unlawful or harmful.</p>
+
+      <h2 class="deco">Your photos and your results</h2>
+      <p>You keep all rights to the photos you submit. We don't claim ownership of your photos or your restored results. To the extent any rights are needed for us to operate the Service, you grant us and our processing provider a limited licence to use your photo solely to perform the restoration you request — nothing more. As between you and us, the restored image is yours to keep, use, print, and share, subject to the rights of any third parties depicted and to applicable law. You're responsible for how you use your results.</p>
+
+      <h2 class="deco">Our intellectual property</h2>
+      <p>The app, the website, our name, logo, and the design and content we create are owned by Mend Memories and protected by law. We grant you a personal, limited, non-transferable, non-exclusive licence to use the app for its intended purpose. You may not copy, modify, reverse-engineer, resell, or create derivative works of the Service except as the law expressly permits.</p>
+
+      <h2 class="deco">Disclaimers</h2>
+      <p>The Service is provided "as is" and "as available." To the fullest extent permitted by law, we disclaim all warranties, express or implied, including merchantability, fitness for a particular purpose, and non-infringement. We don't warrant that the Service will be uninterrupted, error-free, or that any restoration will achieve a particular outcome. Some jurisdictions don't allow certain disclaimers, so some of the above may not apply to you.</p>
+
+      <h2 class="deco">Limitation of liability</h2>
+      <p>To the fullest extent permitted by law, Mend Memories will not be liable for indirect, incidental, special, consequential, or punitive damages, or for any loss of data or images. Our total liability for any claim relating to the Service will not exceed the greater of the amount you paid us in the 12 months before the claim, or CAD $50. Nothing in these Terms excludes liability that can't be excluded under applicable law, including certain consumer rights.</p>
+
+      <h2 class="deco">Indemnity</h2>
+      <p>You agree to indemnify and hold harmless Mend Memories from claims, damages, and expenses arising out of your misuse of the Service, your violation of these Terms, or your infringement of any third party's rights, to the extent permitted by law.</p>
+
+      <h2 class="deco">Suspension and termination</h2>
+      <p>You can stop using the Service and delete your account any time. We may suspend or terminate access if you breach these Terms or use the Service unlawfully. Provisions that by their nature should survive termination — including ownership, disclaimers, limitation of liability, and indemnity — will survive.</p>
+
+      <h2 class="deco">Governing law</h2>
+      <p>These Terms are governed by the laws of the Province of Ontario and the federal laws of Canada applicable there, without regard to conflict-of-laws rules. The courts located in Ontario, Canada will have jurisdiction over any dispute, except where mandatory law in your place of residence gives you the right to bring proceedings elsewhere. If you're a consumer, you keep the benefit of any mandatory consumer protections of your home jurisdiction.</p>
+
+      <h2 class="deco">Apple-required terms</h2>
+      <p>Because Mend Memories is licensed through the Apple App Store, the following apply to your use of the app on Apple devices:</p>
+      <ul>
+        <li>These Terms are between you and Mend Memories only, <strong>not with Apple</strong>. Apple isn't responsible for the app or its content.</li>
+        <li>Apple grants you a licence to use the app as set out in the <strong><a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank" rel="noopener">Apple Media Services Terms</a></strong> (the "Usage Rules") — a limited, non-transferable licence to use the app on Apple-branded devices you own or control, as permitted by those rules.</li>
+        <li><strong>Maintenance and support</strong> for the app is our responsibility, not Apple's. Apple has no obligation to provide any support for the app.</li>
+        <li>To the extent permitted by law, Apple has <strong>no warranty obligation</strong> for the app. If the app fails to conform to any applicable warranty, you may notify Apple, and Apple may refund the purchase price (if any); beyond that, Apple has no other warranty obligation.</li>
+        <li>Apple isn't responsible for addressing any <strong>claims</strong> relating to the app, including product-liability, legal-or-regulatory, or consumer-protection claims; those are our responsibility.</li>
+        <li>If a third party claims the app infringes its intellectual property, Mend Memories — not Apple — is responsible for the investigation, defence, settlement, and discharge of that claim.</li>
+        <li>You represent that you're not located in a country subject to a U.S. Government embargo or designated as "terrorist supporting," and that you're not on any U.S. Government restricted-parties list.</li>
+        <li><strong>Apple and its subsidiaries are third-party beneficiaries</strong> of these Terms and may enforce them against you.</li>
+        <li>You must comply with applicable third-party terms (for example, your wireless carrier's terms) when using the app.</li>
+      </ul>
+
+      <h2 class="deco">Changes to these Terms</h2>
+      <p>We may update these Terms. When we do, we'll change the date at the top of this page, and for material changes we'll give additional notice in the app or on this site. Continuing to use the Service after an update means you accept the revised Terms.</p>
+
+      <h2 class="deco">Contact us</h2>
+      <p>Questions about these Terms? Email <strong><a href="mailto:help@mendmemories.com">help@mendmemories.com</a></strong>.<br>2021076 Ontario Corporation, Toronto, Ontario, Canada.</p>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="nav-mark" href="/"><img class="nav-icon" src="assets/AppIcon.png" alt=""></a>
+        <p>Photo restoration for people, not prompt engineers. Made with care for the keepers of the family album.</p>
+      </div>
+      <div class="footer-col">
+        <h4>App</h4>
+        <ul>
+          <li><a href="/#how">How it works</a></li>
+          <li><a href="/#actions">What it mends</a></li>
+          <li><a href="/#pricing">Pricing</a></li>
+          <li><a href="/#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacy.html">Privacy</a></li>
+          <li><a href="/terms.html">Terms</a></li>
+          <li><a href="/support.html">Support</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 2021076 Ontario Corporation. All rights reserved.</span>
+      <span class="made">Made with care &middot; for the keepers of the album</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var t=document.querySelector('.nav-toggle');
+  if(t){t.addEventListener('click',function(){document.querySelector('.nav').classList.toggle('nav-open');});}
+</script>
+</body>
+</html>

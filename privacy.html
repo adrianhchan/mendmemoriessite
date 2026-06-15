@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Mend Memories</title>
+<meta name="description" content="How Mend Memories handles your photos and data. Sign in with Apple, on-the-fly AI restoration, nothing kept on our end.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<!-- Point these at wherever your stylesheets actually live (same files you sent), loaded in this order. -->
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles-2.css">
+<link rel="stylesheet" href="styles-3.css">
+<link rel="stylesheet" href="styles-responsive.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="nav-mark" href="#top" aria-label="Mend Memories home">
+      <img class="nav-icon" src="assets/AppIcon.png" alt="Mend Memories">
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#how">How it works</a>
+      <a href="#actions">What it restores</a>
+      <a href="#gallery">Examples</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-links-cta" href="#download">Download</a>
+    </div>
+    <a class="nav-cta" href="#download">
+      Download
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M5 12h14M13 6l6 6-6 6"/>
+      </svg>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<script>
+  (function () {
+    var nav = document.getElementById('nav');
+    var toggle = document.getElementById('navToggle');
+    var links = document.getElementById('navLinks');
+    if (!nav || !toggle || !links) return;
+    function setOpen(open) {
+      nav.classList.toggle('nav-open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    }
+    toggle.addEventListener('click', function () {
+      setOpen(!nav.classList.contains('nav-open'));
+    });
+    links.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') setOpen(false);
+    });
+  })();
+</script>
+
+<section class="section">
+  <div class="container">
+
+    <div class="section-head">
+      <div class="section-eyebrow">Privacy</div>
+      <h1 class="section-title">Privacy Policy</h1>
+      <p class="section-sub">Your photos are yours. We collect as little as we can, we don't keep your photos, and we never sell your information. Here's exactly what that means.</p>
+    </div>
+
+    <div class="faq">
+
+      <p class="mono">Last updated June 14, 2026</p>
+
+      <p>This Privacy Policy describes how <strong>2021076 Ontario Corporation</strong> ("Mend Memories," "we," "us," or "our") handles information in connection with the Mend Memories app for iPhone and iPad and the website at mendmemories.com (together, the "Service"). By using the Service, you agree to the practices described here.</p>
+
+      <h2 class="deco">The short version</h2>
+      <div class="pitch-points">
+        <div class="pitch-point">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <div class="txt"><strong>Sign in with Apple only</strong><span>We don't ask for your name, email, or a password.</span></div>
+        </div>
+        <div class="pitch-point">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <div class="txt"><strong>We don't keep your photos</strong><span>A photo is sent only to be restored, and the result comes back. We don't store it on our servers.</span></div>
+        </div>
+        <div class="pitch-point">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <div class="txt"><strong>Never used to train AI</strong><span>Your photos are not used to train any AI model.</span></div>
+        </div>
+        <div class="pitch-point">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <div class="txt"><strong>Apple handles payment</strong><span>Purchases go through Apple. We never see your card details.</span></div>
+        </div>
+        <div class="pitch-point">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <div class="txt"><strong>Delete anytime, in the app</strong><span>Remove your account and its data from Settings &rarr; Delete Account.</span></div>
+        </div>
+        <div class="pitch-point">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <div class="txt"><strong>No ads, no tracking</strong><span>We don't run ads or use third-party analytics or trackers.</span></div>
+        </div>
+      </div>
+
+      <h2 class="deco">Who we are</h2>
+      <p>The Service is operated by 2021076 Ontario Corporation, based in Toronto, Ontario, Canada. For any privacy question or request, contact us at <strong><a href="mailto:help@mendmemories.com">help@mendmemories.com</a></strong>. If you're in the European Economic Area, the United Kingdom, or California, see <strong><a href="#rights">Your rights and choices</a></strong> below.</p>
+
+      <h2 class="deco">What we collect, and why</h2>
+
+      <h3 class="deco">Your account (Sign in with Apple)</h3>
+      <p>We use Sign in with Apple solely to create and secure your account, so your purchases and remaining mends stay associated with you across sessions and devices. Through this, we receive a unique identifier assigned to you by Apple. <strong>We do not request your name or email address</strong>, and we don't set up a separate username or password. The only time we'd receive your email is if you choose to write to our support address.</p>
+
+      <h3 class="deco">The photos you choose to restore</h3>
+      <p>When you select a photo and tap a restoration action, that photo is transmitted securely to our AI image-processing provider so the restoration can be performed and the finished image returned to your device. We use your photo for one purpose only: to carry out the restoration you asked for. We don't store your original photos or restored results on our servers, and we don't build profiles, perform facial recognition, or derive any other information from them.</p>
+
+      <h3 class="deco">Purchases</h3>
+      <p>Subscriptions, the one-time Pro actions unlock, and top-up packs are sold through Apple's in-app purchase system. <strong>Apple processes the payment</strong>; we never receive or store your payment card information. We receive limited transaction and entitlement information from Apple (for example, that a subscription is active, or that a top-up was purchased) so we can deliver the mends and features you've paid for. Apple's handling of your information is governed by <strong><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a></strong>.</p>
+
+      <h3 class="deco">Diagnostics</h3>
+      <p>We don't include any third-party analytics, advertising, or tracking software in the app. If you've opted in through your iOS settings, Apple may share standard, aggregated crash and performance diagnostics with us through App Store Connect. You can turn this off any time in Settings &rarr; Privacy &amp; Security &rarr; Analytics &amp; Improvements on your device.</p>
+
+      <h2 class="deco" id="ai">AI processing and the third party that performs it</h2>
+      <p>Restorations are performed off your device by a frontier AI image model. We want to be specific about this, because it's the one place your photo leaves your phone.</p>
+
+      <div class="trial-banner">
+        <span class="trial-badge">AI</span>
+        <div class="trial-copy">
+          <strong>Where your photo goes</strong>
+          <span>When you tap a restoration action, the selected photo and your chosen action are sent to <strong>fal.ai</strong> (Features &amp; Labels, Inc.), our AI image-processing provider, which generates the restored image and returns it to you. fal acts as our service provider (processor) and handles your photo only on our behalf, only to perform your requested restoration. Your photo is retained by fal only transiently to carry out the processing and is then deleted. Your photos are not used to train AI models. See the <strong><a href="https://fal.ai/terms" target="_blank" rel="noopener">fal Terms</a></strong> and <strong><a href="https://fal.ai/legal/privacy-policy" target="_blank" rel="noopener">fal Privacy Policy</a></strong>.</span>
+        </div>
+      </div>
+
+      <p>By selecting a photo and tapping a restoration action, you ask us to send that photo for processing and you consent to this. If you don't want a photo processed this way, don't submit it.</p>
+
+      <h2 class="deco">How your information is used</h2>
+      <ul>
+        <li>To authenticate you and keep your account secure.</li>
+        <li>To perform the photo restorations you request.</li>
+        <li>To deliver the mends, features, and credits you've purchased through Apple.</li>
+        <li>To respond to you when you contact support.</li>
+        <li>To protect the Service against fraud, abuse, and misuse, and to comply with the law.</li>
+      </ul>
+
+      <h2 class="deco">When information is shared</h2>
+      <p>We don't sell your personal information, and we don't share it for advertising. We share information only with the providers that make the app work, and only as needed:</p>
+      <ul>
+        <li><strong>fal.ai</strong> — performs the AI photo restoration, as described above.</li>
+        <li><strong>Apple</strong> — provides Sign in with Apple and processes all purchases.</li>
+        <li><strong>Railway / Google Cloud</strong> — our backend runs on Railway, hosted on Google Cloud Platform. Your restoration request passes through this infrastructure in transit on its way to the AI provider, but your photos are not stored there. Railway maintains a <strong><a href="https://railway.com/legal/dpa" target="_blank" rel="noopener">Data Processing Agreement</a></strong> and publishes its subprocessors in its <strong><a href="https://trust.railway.com/" target="_blank" rel="noopener">Trust Center</a></strong>.</li>
+      </ul>
+      <p>We may also disclose information if required by law, to enforce our Terms, or to protect the rights, safety, and property of our users or the public. If our business is ever involved in a merger or acquisition, information may be transferred as part of that transaction, subject to this Policy.</p>
+
+      <h2 class="deco">How long we keep things</h2>
+      <p>We keep your account identifier and your purchase/entitlement records for as long as your account exists, so your purchases and remaining mends keep working. We don't retain your photos or restored results; the AI provider retains them only transiently to perform the processing. When you delete your account, we delete your account identifier and associated records.</p>
+
+      <h2 class="deco">Deleting your account and data</h2>
+      <p>You can delete your account any time from inside the app: open Settings &rarr; Delete Account. This removes your account identifier and the records associated with it. Because we don't store your photos, there are no photos on our end to delete. You can also email us at <strong><a href="mailto:help@mendmemories.com">help@mendmemories.com</a></strong> and we'll handle the deletion for you. Note that deleting your account doesn't cancel an active subscription — manage subscriptions in Settings &rarr; [your name] &rarr; Subscriptions on your device.</p>
+
+      <h2 class="deco">Children</h2>
+      <p>Mend Memories is intended for adults restoring their own family photographs. The Service isn't directed to children, and we don't knowingly collect personal information from children under 13 (or under 16 where required by local law). If you believe a child has provided us information, contact <strong><a href="mailto:help@mendmemories.com">help@mendmemories.com</a></strong> and we'll delete it.</p>
+
+      <h2 class="deco">Where information is processed</h2>
+      <p>We're based in Canada, and our providers (including fal.ai and Google Cloud) may process information in the United States and other countries. Where the law requires it, transfers of personal information out of your region are made under appropriate safeguards, such as the European Commission's Standard Contractual Clauses.</p>
+
+      <h2 class="deco" id="rights">Your rights and choices</h2>
+      <p>Depending on where you live, you may have the right to access, correct, delete, or port your personal information, to object to or restrict certain processing, and to withdraw consent. The simplest way to exercise most of these is to delete your account in the app, or email <strong><a href="mailto:help@mendmemories.com">help@mendmemories.com</a></strong>. We won't discriminate against you for exercising your rights.</p>
+      <ul>
+        <li><strong>Canada (PIPEDA):</strong> you may request access to and correction of your personal information.</li>
+        <li><strong>EEA / UK (GDPR):</strong> our legal bases are performing our contract with you (running the Service and your restorations), your consent (sending a photo for processing), and our legitimate interests (securing the Service and preventing abuse). You may lodge a complaint with your local data protection authority.</li>
+        <li><strong>California (CCPA/CPRA):</strong> we don't sell or "share" your personal information as those terms are defined, and we don't use it for cross-context behavioral advertising. You may request access or deletion.</li>
+      </ul>
+
+      <h2 class="deco">Security</h2>
+      <p>Photos are transmitted over encrypted connections, we hold as little data as possible, and we don't keep your images. No method of transmission or storage is perfectly secure, but minimizing what we collect is our first line of defense.</p>
+
+      <h2 class="deco">Changes to this Policy</h2>
+      <p>If we make changes, we'll update the date at the top of this page, and for material changes we'll provide additional notice in the app or on this site. Continuing to use the Service after an update means you accept the revised Policy.</p>
+
+      <h2 class="deco">Contact us</h2>
+      <p>Questions, requests, or concerns? Email <strong><a href="mailto:help@mendmemories.com">help@mendmemories.com</a></strong>.<br>2021076 Ontario Corporation, Toronto, Ontario, Canada.</p>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="nav-mark" href="/"><img class="nav-icon" src="assets/AppIcon.png" alt=""></a>
+        <p>Photo restoration for people, not prompt engineers. Made with care for the keepers of the family album.</p>
+      </div>
+      <div class="footer-col">
+        <h4>App</h4>
+        <ul>
+          <li><a href="/#how">How it works</a></li>
+          <li><a href="/#actions">What it mends</a></li>
+          <li><a href="/#pricing">Pricing</a></li>
+          <li><a href="/#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacy.html">Privacy</a></li>
+          <li><a href="/terms.html">Terms</a></li>
+          <li><a href="/support.html">Support</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 2021076 Ontario Corporation. All rights reserved.</span>
+      <span class="made">Made with care &middot; for the keepers of the album</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var t=document.querySelector('.nav-toggle');
+  if(t){t.addEventListener('click',function(){document.querySelector('.nav').classList.toggle('nav-open');});}
+</script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support — Mend Memories</title>
+<meta name="description" content="Help with Mend Memories: subscriptions, restoring purchases, deleting your account, and getting in touch.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<!-- Point these at wherever your stylesheets actually live (same files you sent), loaded in this order. -->
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles-2.css">
+<link rel="stylesheet" href="styles-3.css">
+<link rel="stylesheet" href="styles-responsive.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="nav-mark" href="#top" aria-label="Mend Memories home">
+      <img class="nav-icon" src="assets/AppIcon.png" alt="Mend Memories">
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#how">How it works</a>
+      <a href="#actions">What it restores</a>
+      <a href="#gallery">Examples</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-links-cta" href="#download">Download</a>
+    </div>
+    <a class="nav-cta" href="#download">
+      Download
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M5 12h14M13 6l6 6-6 6"/>
+      </svg>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<script>
+  (function () {
+    var nav = document.getElementById('nav');
+    var toggle = document.getElementById('navToggle');
+    var links = document.getElementById('navLinks');
+    if (!nav || !toggle || !links) return;
+    function setOpen(open) {
+      nav.classList.toggle('nav-open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    }
+    toggle.addEventListener('click', function () {
+      setOpen(!nav.classList.contains('nav-open'));
+    });
+    links.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') setOpen(false);
+    });
+  })();
+</script>
+
+<section class="section">
+  <div class="container">
+
+    <div class="section-head">
+      <div class="section-eyebrow">Support</div>
+      <h1 class="section-title">How can we help?</h1>
+      <p class="section-sub">Real help from real people. If you can't find your answer below, write to us — we read every message.</p>
+    </div>
+
+    <div class="trial-banner">
+      <span class="trial-badge">EMAIL</span>
+      <div class="trial-copy">
+        <strong>help@mendmemories.com</strong>
+        <span>We aim to reply within two business days. The more you can tell us — your device, what you tapped, and what happened — the faster we can help.</span>
+      </div>
+    </div>
+
+    <div class="faq">
+
+      <details class="faq-item" open>
+        <summary>How restoring a photo works <span class="plus"></span></summary>
+        <div class="answer">Pick a photo with your camera or from your library, tap one of the plainly-worded actions (Modernize, Colorize, Repair, and so on), and wait about thirty seconds to a minute. The restored photo comes back ready to save, share, or print at 2K. There are no prompts or settings to learn.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What happens to my photo <span class="plus"></span></summary>
+        <div class="answer">Your photo is sent to our AI image-processing provider only to perform the restoration, and the result returns to your device. We don't store your photos, and they aren't used to train AI. Full details are in our <a href="/privacy.html"><strong>Privacy Policy</strong></a>.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>The free trial <span class="plus"></span></summary>
+        <div class="answer">Everyone starts with 3 free mends. It's a fixed number of restorations, not a countdown. Once they're used, you decide whether to subscribe — nothing is charged until you choose a plan.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Managing or cancelling your subscription <span class="plus"></span></summary>
+        <div class="answer">Subscriptions are billed by Apple and renew monthly. To change plans, cancel, or turn off auto-renew, open Settings &rarr; [your name] &rarr; Subscriptions on your iPhone or iPad and select Mend Memories. Cancelling stops future renewals; you keep access until the end of the period you've paid for.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Top-up packs and Pro actions <span class="plus"></span></summary>
+        <div class="answer">Top-up packs add extra mends; your monthly mends are always spent first, and top-ups expire one year after purchase. The Pro actions unlock (Studio, Headshot, Golden Hour) is a one-time purchase that stays with your account on any plan.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Restoring purchases <span class="plus"></span></summary>
+        <div class="answer">New phone, or reinstalled the app? Open the app's settings and tap Restore Purchases to bring back your subscription and any one-time unlocks.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Refunds <span class="plus"></span></summary>
+        <div class="answer">Purchases go through Apple, so refunds are handled by Apple. Use Apple's <a href="https://reportaproblem.apple.com/" target="_blank" rel="noopener"><strong>Report a Problem</strong></a> page to request one.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Deleting your account <span class="plus"></span></summary>
+        <div class="answer">You can delete your account and its associated data any time from inside the app: Settings &rarr; Delete Account. Because we don't store your photos, there are none on our end to remove. Prefer we do it for you? Email <a href="mailto:help@mendmemories.com"><strong>help@mendmemories.com</strong></a>. Note that deleting your account doesn't cancel a subscription — cancel that in Settings &rarr; [your name] &rarr; Subscriptions.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Privacy, in short <span class="plus"></span></summary>
+        <div class="answer">Sign in with Apple only, no name or email collected, photos never stored on our end, no ads or tracking. The full <a href="/privacy.html"><strong>Privacy Policy</strong></a> has the details.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>A restoration didn't look right <span class="plus"></span></summary>
+        <div class="answer">Results vary by photo. Try a different action for the kind of damage you see — for example, Heavy Damage Repair for tears and water damage, or Colorize for black-and-white prints.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>A restoration failed or got stuck <span class="plus"></span></summary>
+        <div class="answer">Check your internet connection and try again. Restorations are processed online and need a connection.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>My purchase isn't showing <span class="plus"></span></summary>
+        <div class="answer">Tap Restore Purchases in the app's settings. If it still doesn't appear, email us with the date of purchase and we'll sort it out.</div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="nav-mark" href="/"><img class="nav-icon" src="assets/AppIcon.png" alt=""></a>
+        <p>Photo restoration for people, not prompt engineers. Made with care for the keepers of the family album.</p>
+      </div>
+      <div class="footer-col">
+        <h4>App</h4>
+        <ul>
+          <li><a href="/#how">How it works</a></li>
+          <li><a href="/#actions">What it mends</a></li>
+          <li><a href="/#pricing">Pricing</a></li>
+          <li><a href="/#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacy.html">Privacy</a></li>
+          <li><a href="/terms.html">Terms</a></li>
+          <li><a href="/support.html">Support</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 2021076 Ontario Corporation. All rights reserved.</span>
+      <span class="made">Made with care &middot; for the keepers of the album</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var t=document.querySelector('.nav-toggle');
+  if(t){t.addEventListener('click',function(){document.querySelector('.nav').classList.toggle('nav-open');});}
+</script>
+</body>
+</html>
